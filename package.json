@@ -1,7 +1,7 @@
 {
   "name": "cosmjs-sandbox",
   "version": "1.0.0",
-  "description": "Experiment with simple CosmJS concepts.",
+  "description": "Experiment with simple cyber-js concepts.",
   "main": "index.js",
   "scripts": {
     "experiment": "ts-node experiment.ts",
