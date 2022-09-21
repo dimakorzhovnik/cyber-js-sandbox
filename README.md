@@ -1,6 +1,6 @@
 # cyber-js beginner sandbox
 
-Use it to experiment with CosmJS commands.
+Use it to experiment with cyber-js commands.
 
 ## Install it
 
