@@ -13,6 +13,6 @@
     "ts-node": "10.7.0"
   },
   "dependencies": {
-    "@cybercongress/cyber-js": "0.3.2"
+    "@cybercongress/cyber-js": "0.3.1"
   }
 }
