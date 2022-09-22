@@ -1,5 +1,5 @@
 {
-  "name": "cosmjs-sandbox",
+  "name": "cyber-js-sandbox",
   "version": "1.0.0",
   "description": "Experiment with simple cyber-js concepts.",
   "main": "index.js",
@@ -13,6 +13,6 @@
     "ts-node": "10.7.0"
   },
   "dependencies": {
-    "@cybercongress/cyber-js": "0.3.2"
+    "@cybercongress/cyber-js": "0.3.1"
   }
 }
