@@ -3,7 +3,7 @@ import { DirectSecp256k1HdWallet, OfflineDirectSigner } from "@cosmjs/proto-sign
 import { SigningCyberClient, CyberClient } from "@cybercongress/cyber-js"
 import { getHackatom } from './testutils';
 
-const rpc = "http://127.0.0.1:26657" // local testnet
+const rpc = "https://rpc.space-pussy-1.cybernode.ai" // testnet
 
 // testnet
 // CHAIN_ID: 'space-pussy-1',
