@@ -1,6 +1,7 @@
 import { promises as fsPromises } from "fs"
 import { DirectSecp256k1HdWallet, OfflineDirectSigner } from "@cosmjs/proto-signing"
 import { SigningCyberClient, CyberClient } from "@cybercongress/cyber-js"
+import { getHackatom } from './testutils';
 
 const rpc = "http://127.0.0.1:26657" // local testnet
 
@@ -8,8 +9,6 @@ const rpc = "http://127.0.0.1:26657" // local testnet
 // CHAIN_ID: 'space-pussy-1',
 // NODE_URL_RPC: 'https://rpc.space-pussy-1.cybernode.ai',
 // NODE_URL_LCD: 'https://lcd.space-pussy-1.cybernode.ai',
-
-const bobAddress: string = "bostrom1apfeqr3mpfnpe8h3tmglzpm4yp6wkkv2g85srj"
 
 const getAliceSignerFromMnemonic = async (): Promise<OfflineDirectSigner> => {
   return DirectSecp256k1HdWallet.fromMnemonic(
@@ -38,12 +37,12 @@ const runAll = async (): Promise<void> => {
     await signingClient.getHeight()
   )
 
-  console.log("Alice balance before:", await client.getAllBalances(alice))
-  console.log("Bob balance before:", await client.getAllBalances(bobAddress))
 
-  const result = await signingClient.sendTokens(alice, bobAddress, [{ denom: "boot", amount: "1" }], {
+  const wasmCode = getHackatom().data
+
+  const result = await signingClient.upload(alice, wasmCode, {
     amount: [{ denom: "boot", amount: "0" }],
-    gas: "200000",
+    gas: "2000000",
   })
   
   console.log("Transfer result:", result)
