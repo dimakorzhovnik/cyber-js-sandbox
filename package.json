@@ -10,7 +10,8 @@
   "author": "cybercongress",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "10.7.0"
+    "ts-node": "10.7.0",
+    "typescript": "^4.8.3"
   },
   "dependencies": {
     "@cybercongress/cyber-js": "0.3.1"

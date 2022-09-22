@@ -157,10 +157,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@cybercongress/cyber-js@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@cybercongress/cyber-js/-/cyber-js-0.3.2.tgz#37d747a6e335cf61c63a6a207c4b503c22ddb66e"
-  integrity sha512-lYUaDX4aSo4YUdn8VLW9Nfzm2M7WIUrE4n606ACX41rqc49Aw+fDziFpntphllJiJlfN1s3fDFEt77M1siNTHA==
+"@cybercongress/cyber-js@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@cybercongress/cyber-js/-/cyber-js-0.3.1.tgz#9639e87cf17be5d15ac82068252cae2609cba070"
+  integrity sha512-iZ2ngYdjgnax4KpTVYQhoMS5WhagGQeGO0axejPtR6wbriu/fpbXNKohCCCE2Tn5uDcNjURuZ6vLgGG6Co8wTw==
   dependencies:
     "@cosmjs/amino" "0.28.4"
     "@cosmjs/cosmwasm-stargate" "0.28.4"
@@ -546,6 +546,11 @@ ts-node@10.7.0:
     make-error "^1.1.1"
     v8-compile-cache-lib "^3.0.0"
     yn "3.1.1"
+
+typescript@^4.8.3:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
+  integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
 
 v8-compile-cache-lib@^3.0.0:
   version "3.0.1"

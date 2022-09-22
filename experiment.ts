@@ -2,7 +2,7 @@ import { promises as fsPromises } from "fs"
 import { DirectSecp256k1HdWallet, OfflineDirectSigner } from "@cosmjs/proto-signing"
 import { SigningCyberClient, CyberClient } from "@cybercongress/cyber-js"
 
-const rpc = "http://127.0.0.1:26657" // local testnet
+const rpc = "https://rpc.space-pussy-1.cybernode.ai" // testnet
 
 // testnet
 // CHAIN_ID: 'space-pussy-1',
