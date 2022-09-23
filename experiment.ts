@@ -9,8 +9,6 @@ const rpc = "https://rpc.space-pussy-1.cybernode.ai" // testnet
 // NODE_URL_RPC: 'https://rpc.space-pussy-1.cybernode.ai',
 // NODE_URL_LCD: 'https://lcd.space-pussy-1.cybernode.ai',
 
-const bobAddress: string = "bostrom1apfeqr3mpfnpe8h3tmglzpm4yp6wkkv2g85srj"
-
 const getAliceSignerFromMnemonic = async (): Promise<OfflineDirectSigner> => {
   return DirectSecp256k1HdWallet.fromMnemonic(
     (await fsPromises.readFile("./testnet.alice.mnemonic.key")).toString(),
